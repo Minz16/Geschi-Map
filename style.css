@@ -1,0 +1,13 @@
+#map {
+    height: 400px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#kartenTeil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
