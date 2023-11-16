@@ -1,1 +1,2 @@
-# Geschi interaktive Map mit Leaflet JS und OpenStreetmaps.org
+# Geschi interaktive Map
+## mit LefletJS und OpenStreetMaps.org
