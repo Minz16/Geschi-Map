@@ -12,9 +12,9 @@
     <title>Geschi Map - Frankfurt im Kaiserreich</title>
 </head>
 <body>
-    <div id="startbild" class="start">
+    <div id="startbild">
 
-        <p class="start">Geschi-Map in Frankfurt</p>
+        <p>Geschi-Map in Frankfurt</p>
 
     </div>
 
@@ -26,15 +26,26 @@
         </div>
 
         <div id="infoblock">
-            <div class="block">
 
 
-
+            <div class="block" onclick="blockClick('parlamentsplatz')">
+                <div class="textbereich">
+                    <p class="titel">Parlamentsplatz</p>
+                    <p class="inhalt">Die ist der Parlamentsplatz. Er liegt im Herzen von Europa, in Frankfurt am Main</p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/U-Bahn-Station_Parlamentsplatz.jpg" alt="" srcset="">
             </div>
+
+
+
+
         </div>
     </div>
 
-    <br>
     <button onClick="stepBack()">Zurück zum Parlamentsplatz</button>
+
+    <div id="unterteil">
+        <p>Gemacht mit ❤️</p>
+    </div>
 </body>
 </html>

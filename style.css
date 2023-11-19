@@ -1,21 +1,5 @@
-#hauptteil {
-    height: 400px;
-}
-
-#kartenTeil {
-    float: right;
-    width: 55%;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-}
-
-#map {
-    height: 650px;
-    width: 100%;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+:root {
+    --hoehe: clamp(650px, 80vh, 1000px);
 }
 
 body {
@@ -29,6 +13,41 @@ body {
 
 }
 
+#startbild {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startbild p {
+    padding: 5px 50px;
+    border-radius: 2px;
+    font-size: 40px;
+    background-color: rgba(240, 248, 255, 0.445)
+}
+
+#hauptteil {
+    margin: 0 15px;
+    height: var(--hoehe);
+}
+
+#kartenTeil {
+    float: right;
+    width: 55%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#map {
+    height: var(--hoehe);
+    width: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
 #infoblock {
     height: 100%;
     width: 40%;
@@ -37,16 +56,44 @@ body {
     overflow: auto;
 }
 
+.block {
+    padding: 10px 7px;
 
-#startbild {
-    height: 100vh;
+    background-color: rgb(226, 226, 226);
+    border-top: 2px solid rgb(85, 85, 85);
+    border-bottom: 2px solid rgb(85, 85, 85);
+
+    display: flex;
+    align-items: center;
+
+}
+
+.block .titel {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.block .inhalt {
+    font-size: 12pt;
+}
+
+.block img {
+    height: 150px;
+}
+
+
+#unterteil {
+    width: 100%;
+    height: clamp(50px, 8vh, 350px);
+    background-color: #282a35;
+    margin: 20px 0 0 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p.start {
-    border-radius: 2px;
-    font-size: 40px;
-    background-color: aliceblue;
+#unterteil p {
+    font-size: 14pt;
+    color: #dddddd;
 }
