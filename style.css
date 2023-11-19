@@ -1,13 +1,52 @@
-#map {
+#hauptteil {
     height: 400px;
-    width: 80vw;
+}
+
+#kartenTeil {
+    float: right;
+    width: 55%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#map {
+    height: 650px;
+    width: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+body {
+    background-image: url("https://live.staticflickr.com/3058/2702829744_7e5362be4b_b.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    margin: 0;
+
+}
+
+#infoblock {
+    height: 100%;
+    width: 40%;
+
+    float: left;
+    overflow: auto;
+}
+
+
+#startbild {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#kartenTeil {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+p.start {
+    border-radius: 2px;
+    font-size: 40px;
+    background-color: aliceblue;
 }
