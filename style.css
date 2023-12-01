@@ -1,5 +1,23 @@
 :root {
     --hoehe: clamp(650px, 80vh, 1000px);
+    --breite: clamp(500px, 45%, 1000px);
+    scroll-behavior: smooth;
+}
+* {
+    scroll-behavior: smooth;
+
+}
+
+@media only screen and (max-width: 550px) {
+    :root {
+        --breite: clamp(350px, 45%, 1000px);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #hauptteil {
+        height: calc(var(--hoehe)*2);
+    }
 }
 
 body {
@@ -29,12 +47,21 @@ body {
 
 #hauptteil {
     margin: 0 15px;
-    height: var(--hoehe);
+    /*height: var(--hoehe);*/
+    height: calc(var(--hoehe)+0px);
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #kartenTeil {
     float: right;
-    width: 55%;
+    width: var(--breite);
+    height: var(--hoehe);
+
+    margin-bottom: 20px;
+    /*width: 55%;*/
     /*display: flex;
     justify-content: center;
     align-items: center;*/
@@ -49,17 +76,36 @@ body {
 }
 
 #infoblock {
-    height: 100%;
-    width: 40%;
+    height: var(--hoehe);
+    width: var(--breite);
 
     float: left;
     overflow: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+}
+
+#infoblock::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+@keyframes hoch {
+    0% {
+        transform: height(0);
+    }
+
+    100% {
+        transform: height(auto);
+    }
 }
 
 .block {
     padding: 10px 7px;
 
-    background-color: rgb(226, 226, 226);
+    background-color: rgba(226, 226, 226, 0.87);
     border-top: 2px solid rgb(85, 85, 85);
     border-bottom: 2px solid rgb(85, 85, 85);
 
@@ -74,12 +120,29 @@ body {
 }
 
 .block .inhalt {
+    max-height: 200px;
     font-size: 12pt;
+    overflow: hidden;
+    /*animation: hoch 5s linear 2s infinite;*/
+    transition: all 3s ease-in-out 0s;
+
+}
+
+.block .inhalt.klopfklopf {
+    max-height: 500px;
 }
 
 .block img {
-    height: 150px;
+    width: 200px;
+    margin-left: 9px;
+
 }
+
+button {
+    margin: 7px 15px;
+}
+
+
 
 
 #unterteil {
@@ -96,4 +159,23 @@ body {
 #unterteil p {
     font-size: 14pt;
     color: #dddddd;
+}
+
+
+
+
+/*Musikplatte*/
+
+#platte {
+    height: 30px;
+    animation: none;
+}
+
+#platte:hover {
+    animation: none;
+}
+
+@keyframes dreh {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }

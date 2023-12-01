@@ -18,7 +18,7 @@
 
     </div>
 
-    <h1>Helo proudly presented by min tim e li </h1>
+    <h1>Helo proudly presented by min tim e li</h1>
 
     <div id="hauptteil">
         <div id="kartenTeil">
@@ -28,21 +28,42 @@
         <div id="infoblock">
 
 
-            <div class="block" onclick="blockClick('parlamentsplatz')">
+            <div id="parlament" class="block">
                 <div class="textbereich">
                     <p class="titel">Parlamentsplatz</p>
-                    <p class="inhalt">Die ist der Parlamentsplatz. Er liegt im Herzen von Europa, in Frankfurt am Main</p>
+                    <p class="inhalt">
+                        Die ist der Parlamentsplatz. Er liegt im Herzen von Europa, in Frankfurt am Main
+                    </p>
                 </div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/U-Bahn-Station_Parlamentsplatz.jpg" alt="" srcset="">
             </div>
 
-
+            <div id="juchu" class="block">
+                <div class="textbereich">
+                    <p class="titel">Juchostraße</p>
+                    <p class="inhalt">
+                        Friedrich Siegmund Jucho (1805-1884) war der Sohn des Frankfurter Notars Martin Jucho, dessen Mutter aus Wetzlar stammte. Nach dem Besuch des Städtischen Gymnasiums in Frankfurt studierte er ab 1823 Rechtswissenschaften. Als führender Vertreter der liberalen Bewegung in Frankfurt nahm er an illegalen Vereinssitzungen teil, was ihm eine Geldstrafe einbrachte.
+                        Unter dem Vorwurf, verbotene Schriften verteilt und Teilnehmern des Frankfurter Wachensturms geholfen zu haben, wurde er 1834 nach einer Hausdurchsuchung für vier Jahre inhaftiert. Bei den Wahlen 1848 wurde Jucho mit 6.650 Stimmen als Abgeordneter der Freien Stadt Frankfurt in die Deutsche Nationalversammlung gewählt. 
+                        Dort schloss er sich der Fraktion Westendhall an, später dem Centralmärzverein. Nach dem Ende des Paulskirchenparlaments geriet er in Konflikt mit dem Deutschen Bund wegen des Archivs der Nationalversammlung, das er mit der Verfassungsurkunde verwahrt hatte. Die städtischen Behörden entzogen ihm das Archiv 1852, jedoch gelang es ihm, die Verfassungsurkunde sicher nach England zu bringen. 
+                        Trotz eines Gerichtsverfahrens wurde er freigesprochen, und 1870 übergab er das Original der Verfassung an den Präsidenten des Reichstags des Norddeutschen Bundes.
+                    </p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Friedrich_Siegmund_Jucho.jpg" alt="" srcset="">
+            </div>
 
 
         </div>
     </div>
 
     <button onClick="stepBack()">Zurück zum Parlamentsplatz</button>
+
+    <div class="music">
+        <audio id="music">
+            <source src="./ressources/WakaWaka.mp3" type="audio/mpeg">
+        </audio>
+        <img id="platte" onclick="play()" src="./ressources/platte.png" alt="Bild von einer Schallplatte">
+    </div>
+    
 
     <div id="unterteil">
         <p>Gemacht mit ❤️</p>
