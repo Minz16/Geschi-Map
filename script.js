@@ -33,7 +33,7 @@ class Pointer {
     create(jumpName, name) {
         this.name = new L.marker([this.koordinaten[0] , this.koordinaten[1]]).addTo(map).on('click', function(e) {
             tim(jumpName)
-            document.getElementById(name).getElementsByClassName("inhalt")[0].classList.toggle("auf");
+            document.getElementById(name).getElementsByClassName("inhalt")[0].classList.toggle("klopfklopf");
             //document.getElementById(name).getElementsByClassName("inhalt")[0].style.maxHeight = "none"
         })
         this.name.bindPopup(this.text)
