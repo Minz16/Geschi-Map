@@ -124,12 +124,15 @@ body {
     font-size: 12pt;
     overflow: hidden;
     /*animation: hoch 5s linear 2s infinite;*/
-    transition: all 3s ease-in-out 0s;
+    transition: all 1.5s ease-in-out 0s;
+}
 
+.block .inhalt:hover {
+    cursor: pointer;
 }
 
 .block .inhalt.klopfklopf {
-    max-height: 500px;
+    max-height: 1000px;
 }
 
 .block img {
