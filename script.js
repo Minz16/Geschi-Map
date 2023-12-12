@@ -38,6 +38,7 @@ class Pointer {
                 this.klappe = true
             }
             tim(jumpName)
+            document.getElementById(name).getElementsByClassName("inhalt")[0].classList.toggle("klopfklopf");
             //document.getElementById(name).getElementsByClassName("inhalt")[0].style.maxHeight = "none"
         })
         this.name.bindPopup(this.text)
