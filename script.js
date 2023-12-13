@@ -3,7 +3,7 @@ window.onload = function() {
 //document.getElementsByTagName('h2')[3].scrollIntoView();
 function stepBack() {
     //parlamentsPlatz.openPopup();
-    map.setView([50.12, 8.71], 13);
+    map.setView([50.12006, 8.71357], 16);
 
 }
 function blockClick(x) {
@@ -96,7 +96,7 @@ function tim(x) {
     window.location.href = "#"+x;
 }
 
-var map = L.map('map').setView([50.12, 8.71], 15); //Koordinaten
+var map = L.map('map').setView([50.12006, 8.71357], 16); //Koordinaten
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -144,6 +144,21 @@ jacoby = new Pointer("jacoby", [50.11908245072539, 8.715217961944436], jacobyTex
 
 let simsonText = "<h1>Simsonstraße</h1> Eduard von Simson (1810-1899) war ein bedeutender Jurist und Politiker des 19. Jahrhunderts. Nach seinem Studium in Königsberg stieg er 1836 zum Professor der Rechte auf, war Mitglied des Gothaer Nachparlaments (1849), Präsident des Volkshauses der Erfurter Versammlung (1850) und von 1858 bis 1866 Präsident des Preußischen Abgeordnetenhauses. Später bekleidete er wichtige Positionen wie Appellationsgerichtspräsident in Frankfurt/Oder und Präsident des Reichsgerichts Leipzig, wurde Mitglied der Nationalliberalen Partei und erhielt 1888 den Schwarzen Adlerorden sowie den erblichen Adel."
 simson = new Pointer("simson", [50.12072099689345, 8.71566803836914], simsonText)
+
+let reinganumText = "<h1>Reinganumstraße</h1> Maximilian Reinganum (1798–1878), geboren in Frankfurt, war ein Jurist und Aktivist. Nach seinem Jurastudium schloss er sich der Alten Heidelberger Burschenschaft an, konvertierte 1821 zum Protestantismus, um als Advokat zu praktizieren, und setzte sich lebenslang für die Gleichberechtigung der jüdischen Bürger ein. Als erfolgreicher Jurist und politischer Akteur engagierte er sich insbesondere während der Revolution von 1848 und setzte sich für demokratische Werte ein."
+reinganum = new Pointer("reinganum", [50.12129726015901, 8.712604876791902], reinganumText)
+
+let auerswaldText = "<h1>Auerswaldstraße</h1> Rudolf von Auerswald (1795–1866) entstammte einem angesehenen Meißener Adelsgeschlecht und spielte eine bedeutende Rolle während der Märzrevolution von 1848. Als Oberpräsident von Ostpreußen und später Außenminister präsentierte er einen liberalen Verfassungsentwurf für Preußen, der jedoch von der Nationalversammlung abgelehnt wurde. Seine politische Karriere umfasste auch die Teilnahme am Erfurter Parlament, die Leitung der Rheinprovinz und den Rücktritt im Zuge der liberalen Spaltung von 1862."
+auerswald = new Pointer("auerswald", [50.11929655004541, 8.71379962309906], auerswaldText)
+
+let droysenText = '<h1>Droysenstraße</h1> Johann Gustav Bernhard Droysen (1808–1884) war ein bedeutender Historiker und Politiker des 19. Jahrhunderts. Als Abgeordneter der Nationalversammlung 1848 setzte er sich für die Unabhängigkeit von Schleswig und Holstein ein. Neben seinem politischen Engagement prägte er die Geschichtswissenschaft durch wegweisende Werke wie die "Geschichte des Hellenismus," in der er die Bedeutung dieser Epoche für die Entstehung des Christentums hervorhob.'
+droysen = new Pointer("droysen", [50.11761403538837, 8.712627507044228], droysenText)
+
+let dahlmannText = "<h1>Dahlmannstraße</h1> Friedrich Christoph Dahlmann (1785–1860) war eine Schlüsselfigur in der liberalen Bewegung des 19. Jahrhunderts. Als Vertrauensmann vertrat er Preußen in der Nationalversammlung von 1848 in Frankfurt und spielte eine entscheidende Rolle bei Verhandlungen zur preußischen Verfassung sowie bei der Trennung von Schleswig und Holstein von Dänemark. Trotz politischer Rückschläge setzte er sich weiterhin für liberale Ideale ein, trat der preußischen Ersten Kammer bei, und verstarb 1860 in Bonn."
+dahlmann = new Pointer("dahlmann", [50.11848568560045, 8.709844840403823], dahlmannText)
+
+let grimmText = "<h1>Brüder-Grimm-Straße</h1> Die Brüder Grimm, Jacob und Wilhelm, waren nicht nur herausragende Sprachwissenschaftler und Volkskundler, sondern auch politisch aktiv. Jacob Grimm war Abgeordneter der Frankfurter Nationalversammlung von 1848, wo er sich für die Formulierung der Menschenrechte in Deutschland einsetzte. Die Brüder wurden als Göttinger Sieben entlassen, nachdem sie gegen den Verfassungsbruch des Königs von Hannover protestierten, erhielten jedoch vorübergehend Unterstützung durch ein Bürgerkomitee aus Leipzig."
+grimm = new Pointer("grimm", [50.11977282932826, 8.710138077128436], grimmText)
 
 
 

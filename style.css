@@ -1,11 +1,11 @@
 :root {
     --hoehe: clamp(650px, 80vh, 1000px);
     --breite: clamp(500px, 45%, 1000px);
+    --linkfarbe: hsl(240, 100%, 62%);
     scroll-behavior: smooth;
 }
 * {
     scroll-behavior: smooth;
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -43,6 +43,28 @@ body {
     border-radius: 2px;
     font-size: 40px;
     background-color: rgba(240, 248, 255, 0.445)
+}
+
+.info {
+    background-color: hsla(0, 0%, 100%, 0.842);
+    margin: 0 0 40px 0;
+    padding: 20px;
+    width: 400px;
+    border-top-right-radius: 60px 60px;
+    border-bottom-right-radius: 60px 60px;
+
+}
+
+.info * {
+    margin: 0 15px;
+}
+
+.info h1 {
+    margin: 10px;
+}
+
+.info p {
+    font-size: 13pt;
 }
 
 #hauptteil {
@@ -84,15 +106,10 @@ body {
     overflow-x: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
-
-}
-
-#infoblock::-webkit-scrollbar {
-    width: 0px;
 }
 
 
-@keyframes hoch {
+/*@keyframes hoch {
     0% {
         transform: height(0);
     }
@@ -100,13 +117,13 @@ body {
     100% {
         transform: height(auto);
     }
-}
+}*/
 
 .block {
     padding: 10px 7px;
 
     background-color: rgba(226, 226, 226, 0.87);
-    border-top: 2px solid rgb(85, 85, 85);
+    border-top: 1px solid rgb(85, 85, 85);
     border-bottom: 2px solid rgb(85, 85, 85);
 
     display: flex;
@@ -124,7 +141,7 @@ body {
     font-size: 12pt;
     overflow: hidden;
     /*animation: hoch 5s linear 2s infinite;*/
-    transition: all 1.5s ease-in-out 0s;
+    transition: max-height 1.5s ease-in-out 0s;
 }
 
 .block .inhalt:hover {
@@ -181,4 +198,24 @@ button {
 @keyframes dreh {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
+}
+
+.quelle {
+    margin: 0 !IMPORTANT;
+}
+
+a:link {
+    color: var(--linkfarbe);
+}
+
+a:visited {
+    color: var(--linkfarbe);
+}
+
+a:active {
+    color: var(--linkfarbe);
+}
+
+a:hover {
+    color: hsl(240, 100%, 50%);
 }
