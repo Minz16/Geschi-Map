@@ -4,7 +4,7 @@ body {
 
 .header {
     height: 80px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,4 +14,8 @@ body {
 
 .header h1 {
     margin: 0;
+}
+
+.hauptteil {
+    margin: 0 30px;
 }
