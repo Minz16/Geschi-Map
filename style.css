@@ -67,6 +67,10 @@ body {
     font-size: 13pt;
 }
 
+#space {
+    padding: 20px 0;
+}
+
 #hauptteil {
     margin: 0 15px;
     /*height: var(--hoehe);*/
@@ -157,11 +161,12 @@ body {
     margin-left: 9px;
 
 }
-
+/*
 button {
     margin: 7px 15px;
+    padding: 10px;
 }
-
+*/
 
 
 
@@ -218,4 +223,12 @@ a:active {
 
 a:hover {
     color: hsl(240, 100%, 50%);
+}
+
+img.huechange {
+    filter: hue-rotate(120deg);
+}
+
+#quellen {
+    
 }
